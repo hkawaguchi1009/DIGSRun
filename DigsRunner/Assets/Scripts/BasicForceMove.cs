@@ -38,15 +38,15 @@ public class BasicForceMove : MonoBehaviour
 
     private void move()
     {
-       
+
 
         //Create a force for addforce method
-        Vector3 moveForce = new Vector3(m_HorizontalInputValue * m_Strafe * Time.deltaTime, 0, m_VerticalInputValue * m_Speed * Time.deltaTime);
+        Vector3 moveForce = new Vector3(m_HorizontalInputValue * m_Strafe * Time.deltaTime, 0, m_VerticalInputValue * m_Strafe * Time.deltaTime);
 
         //This is for example AI
         //Vector3 moveForce = new Vector3(1 * m_Strafe * Time.deltaTime, 0, 1 * m_Speed * Time.deltaTime);
-        
-  
+
+
 
         //Addforce method of movement
         m_Rigidbody.AddForce(moveForce);
